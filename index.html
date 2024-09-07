@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark mode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon@2.1.0/dist/flaticon.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+    <div class="icon">
+        <img src="images/alexa-high-resolution-logo-transparent.png" alt="">
+    </div>
+    <div class="navcontent">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Hire me</a></li>
+            <img src="images/sun.png" alt="" class="changeicon" id="changeicon">
+        </ul>
+    </div>
+</div>
+<div class="maincontent">
+    <div class="intro">
+     <h1>I'm Alexa</h1>
+     <p>My journey started with a simple camera and a love for storytelling. Over the years, I’ve honed my skills, experimented with various techniques, and developed a unique style that blends creativity with technical expertise. My goal is to create images that evoke emotion and tell a story, leaving a lasting impression on viewers.</p>
+     <button class="btn1"><a href="">Download CV</a></button>
+     <!-- <div class="socialmediaicons">
+        <button><a href=""><i></i></a></button>
+        <button><a href=""><i></i></a></button>
+        <button><a href=""><i></i></a></button>
+     </div> -->
+    </div>
+  <div class="imgcontent">
+        <img src="images/pattern.png" alt="" class="background">
+        <img src="images/professionalimg.png" alt="" class="mainimg">
+    </div>
+</div>
+   </div>
+   <script>
+    var icon=document.getElementById("changeicon");
+    icon.onclick=function(){
+        document.body.classList.toggle("light-theme");
+        if(  document.body.classList.contains("light-theme")){
+            icon.src="images/moon.png";
+        }else{
+            icon.src="images/sun.png"; 
+        }
+    }
+   </script> 
+</body>
+</html>
